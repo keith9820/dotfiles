@@ -1,0 +1,16 @@
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+CRLF="\n";
+GREEN="\[\033[1;32m\]";
+RED="\[\033[1;31m\]";
+ORANGE="\[\033[33m\]";
+OFF="\[\033[0m\]";
+BRANCH="\[\033[36;1m\]";
+
+CURRENTPATH="$CRLF$GREEN\w$OFF";
+GITBRANCH=" $BRANCH\$(parse_git_branch)$OFF";
+PS2="$ORANGE[\!]:$OFF$RED\$$OFF ";
+
+export PS1="$CURRENTPATH$GITBRANCH$CRLF$PS2"
