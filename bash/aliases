@@ -2,7 +2,9 @@
 alias cls=clear
 alias cl='clear; ls'
 alias cla='clear; ls -al'
-
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 alias h=history
 
 function mkdircd(){ mkdir -p "$@" && eval cd "\"\$$#\""; }

@@ -7,3 +7,5 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 export SVN="http://svn.360i.com/svn"
 export EDITOR=vi
+export NODE_PATH=/usr/local/lib/node_modules
+export LESS='-i -P%f (%i//%m) Line %lt %L'
