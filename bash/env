@@ -1,4 +1,9 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/Keith/Library/AdobeAIRSDK/bin
 
+export HISTFILESIZE=10000
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
+export SVN="http://svn.360i.com/svn"
+export EDITOR=vi

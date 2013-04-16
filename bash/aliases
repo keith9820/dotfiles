@@ -1,5 +1,9 @@
-alias cls=clear
 #alias tree=find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+alias cls=clear
+alias cl='clear; ls'
+alias cla='clear; ls -al'
+
+alias h=history
 
 function mkdircd(){ mkdir -p "$@" && eval cd "\"\$$#\""; }
 
